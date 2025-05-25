@@ -1,93 +1,71 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV - Əlihüseyn Abdullayev</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .skills span {
-      display: inline-block;
-      background-color: #3498db;
-      color: white;
-      padding: 5px 10px;
-      margin: 5px;
-      border-radius: 5px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <center>
-    <img src=c:\Users\hp\Documents\WhatsApp Image 2025-04-11 at 20.26.24_e76928ab.jpg alt="Şəklin yeri" class="profile-pic"><br>
-</center>
+<body class="light-mode">
+
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="modeSwitch" onchange="document.body.classList.toggle('dark-mode')" />
+      🌗 Rejim dəyiş
+    </label>
+  </div>
 
   <div class="container">
-    <h1>Əlihüseyn Abdullayev</h1>
-    <p><strong>Email:</strong> alihuseynabdullayev610@gmail.com | <strong>Telefon:</strong> +994 51 514 20 66</p>
-
-    <div class="section">
-      <h2>Haqqımda</h2>
-      <p>Mən Web HTML, CSS və JavaScript, Python, C++ sahəsində biliklərim var və daim(şübhəli) inkişaf edirəm. Həm də kuryer kimi işləyirəm.</p>
+    <div class="profile">
+      <img src="profil.jpg" alt="Profil şəkli" />
+      <p><strong>Əlihüseyn Abdullayev</strong></p>
+      <p>Email: alihuseynabdullayev610@gmail.com</p>
+      <p>Telefon: +994 51 514 20 66</p>
     </div>
 
-    <div class="section">
-      <h2>Təhsil</h2>
-      <p><strong>Azərbaycan Texniki Universiteti</strong> – İnformasiya Təhlükəsizliyi (2024 - 2029)</p>
+    <!-- Accordion Bölmələr -->
+    <div class="accordion">
+      <input type="checkbox" id="about-toggle">
+      <label for="about-toggle">Haqqımda</label>
+      <div class="content">
+        Mən Web HTML, CSS və JavaScript, Python, C++ sahəsində biliklərim var və daim inkişaf edirəm.
+      </div>
     </div>
 
-    <div class="section">
-      <h2>İş Təcrübəsi</h2>
-      <p><strong>Frontend Developer </strong></p>
-      <ul>
-        <li>Web saytların dizayn və inkişafı</li>
-        <li>Mobil uyğun interfeyslərin yaradılması</li>
-        <li>HTML, CSS və JavaScript istifadə edilərək layihələrin hazırlanması</li>
-      </ul>
-      <p><strong>Kuryer</strong></p>
-      <ul>
-        <li>Bolt vasitəsilə yemək çatdırılması</li>
-        <li>Metroyla stansiyalara boyunbağıların çatdırılması</li>
-      </ul>
+    <div class="accordion">
+      <input type="checkbox" id="education-toggle">
+      <label for="education-toggle">Təhsil</label>
+      <div class="content">
+        Azərbaycan Texniki Universiteti – İnformasiya Təhlükəsizliyi (2024 - 2029)
+      </div>
     </div>
 
-    <div class="section skills">
-      <h2>Bacarıqlar</h2>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Python</span>
-      <span>C++</span>
+    <div class="accordion">
+      <input type="checkbox" id="experience-toggle">
+      <label for="experience-toggle">İş Təcrübəsi</label>
+      <div class="content">
+        Frontend Developer: Web saytların dizayn və inkişafı.<br>
+        Kuryer: Bolt, metro çatdırılmaları.
+      </div>
     </div>
 
-    <div class="section">
-      <h2>Əlaqə</h2>
-      <p><strong>Ünvan:</strong> Bakı, Azərbaycan, Xətai rayonu</p>
-      <p><strong>İnstagram:</strong> alihuseyn.aa</p>
+    <div class="accordion">
+      <input type="checkbox" id="skills-toggle">
+      <label for="skills-toggle">Bacarıqlar</label>
+      <div class="content">
+        HTML, CSS, JavaScript, Python, C++
+      </div>
     </div>
+
+    <div class="accordion">
+      <input type="checkbox" id="contact-toggle">
+      <label for="contact-toggle">Əlaqə</label>
+      <div class="content">
+        Bakı, Azərbaycan, Xətai rayonu.<br>
+        Instagram: alihuseyn.aa
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
-
-
-
-
-
